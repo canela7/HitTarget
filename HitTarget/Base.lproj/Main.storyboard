@@ -36,6 +36,9 @@
                                 <rect key="frame" x="42" y="245" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbI-wx-8Sh"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mbe-MC-yJp">
                                 <rect key="frame" x="109" y="93" width="351" height="30"/>
@@ -102,6 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="Sac-as-xwM" id="yyF-3E-bPv"/>
                         <outlet property="scoreLabel" destination="weh-G7-R9J" id="yp7-Qg-JJQ"/>
                         <outlet property="slider" destination="Mbe-MC-yJp" id="EIL-g0-wcC"/>
                         <outlet property="targetLabel" destination="XHe-Qw-Ime" id="2BW-5V-2UV"/>
